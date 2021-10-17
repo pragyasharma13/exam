@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <include
+                android:id="@+id/toolbar1"
+                layout="@layout/toolbar5" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/toolbar1"
+                android:background="@drawable/toolbar_dropshadow" />
+            <ImageView
+                android:layout_below="@+id/toolbar1"
+                android:id="@+id/imagepass1"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_50dp"
+                app:srcCompat="@drawable/ic_password" />
+
+            <TextView
+                android:id="@+id/enteremail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagepass1"
+                android:layout_marginStart="@dimen/_40dp"
+                android:layout_marginEnd="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_50dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:fontFamily="@font/dinregular"
+                android:gravity="center"
+                android:text="@string/entereotpmsg"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/otp1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/enteremail1"
+                android:layout_marginStart="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_40dp"
+                android:hint="@string/enterotp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/otptv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/otptime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otp1"
+                android:layout_marginRight="@dimen/_40dp"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:gravity="center_horizontal|right"
+                android:text="00:00"
+                android:textColor="@color/red"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/resend1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otptime1"
+                android:layout_marginRight="@dimen/_40dp"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:fontFamily="@font/dinregular"
+                android:gravity="right"
+                android:text="Resend OTP"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="@dimen/_15dp"
+                android:layout_below="@+id/resend1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="@dimen/_40dp"
+                android:background="@color/black"
+                android:fontFamily="@font/dinarabic"
+                android:text="@string/submit"
+                android:layout_marginBottom="@dimen/_40dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white1" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

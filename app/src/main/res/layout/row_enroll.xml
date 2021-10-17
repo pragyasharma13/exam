@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/membercard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_weight="1"
+        android:foreground="?selectableItemBackground"
+        app:cardCornerRadius="@dimen/_5dp"
+        app:cardElevation="@dimen/_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingTop="@dimen/_10dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="@dimen/_50dp"
+                    android:background="@drawable/circle"
+                    android:layout_height="@dimen/_50dp"
+                    android:padding="@dimen/_10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:fontFamily="@font/dinarabic"
+                            android:ellipsize="end"
+                            android:text="@string/Examname"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_14sp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:fontFamily="@font/dinarabic"
+                            android:ellipsize="end"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:text="@string/dot"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/examnametv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:ellipsize="end"
+                            android:layout_weight="1"
+                            android:text="@string/highschoolexamnation"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_12sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:text="@string/username"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_14sp"
+                            android:fontFamily="@font/dinarabic"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:text="@string/dot"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/nametv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/dinarabic"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:text="@string/username"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:fontFamily="@font/dinarabic"
+                            android:ellipsize="end"
+                            android:text="@string/classname1"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_14sp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:fontFamily="@font/dinarabic"
+                            android:ellipsize="end"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:text="@string/dot"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/classnametv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:fontFamily="@font/dinarabic"
+                            android:ellipsize="end"
+                            android:text="@string/highschool"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:fontFamily="@font/dinarabic"
+                            android:ellipsize="end"
+                            android:text="@string/prize1"
+                            android:textStyle="bold"
+                            android:textColor="@color/btncolor"
+                            android:textSize="@dimen/_14sp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:fontFamily="@font/dinarabic"
+                            android:ellipsize="end"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:text="@string/dot"
+                            android:textColor="@color/blue1"
+                            android:textSize="@dimen/_14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/prizetv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:fontFamily="@font/dinarabic"
+                            android:ellipsize="end"
+                            android:text="500  rupees"
+                            android:textColor="@color/btncolor"
+                            android:textSize="@dimen/_12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/viewdetailstv"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="@dimen/_20dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <TextView
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_20dp"
+                        android:gravity="right|bottom"
+                        android:paddingTop="@dimen/_5dp"
+                        android:text="@string/seemore"
+                        android:textColor="@color/btncolor"
+                        android:textSize="@dimen/_10sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/registerdatetv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:textColor="@color/btncolor"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:textSize="@dimen/_12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

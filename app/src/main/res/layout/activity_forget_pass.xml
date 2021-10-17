@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ForgotPassword">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar1"
+                layout="@layout/toolbar5" />
+
+
+            <TextView
+                android:id="@+id/signintxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar1"
+                android:layout_marginStart="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_40dp"
+                android:fontFamily="@font/dinarabic"
+                android:text="@string/ResetPassword"
+                android:textColor="@color/blue1"
+                android:textSize="@dimen/_20sp" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginRight="@dimen/_40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signintxt"
+                android:layout_marginTop="@dimen/_20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dinarabic"
+                    android:text="@string/EnterTheMobileNumberToResetPassword"
+                    android:textColor="@color/blue1"
+                    android:textSize="@dimen/_15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dinarabic"
+                        android:text="@string/thenumber"
+                        android:textColor="@color/blue1"
+                        android:textSize="@dimen/_15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:text="@string/dot"
+                        android:textSize="@dimen/_15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:fontFamily="@font/dinarabic"
+                        android:text="@string/number"
+                        android:textColor="@color/blue1"
+                        android:textSize="@dimen/_15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/MobileLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/linearlayout"
+                        android:layout_marginStart="@dimen/_40dp"
+                        android:layout_marginTop="@dimen/_40dp"
+                        android:layout_marginEnd="@dimen/_40dp"
+                        android:hint="@string/mobileno">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/mobiletv"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:padding="@dimen/_10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/MobileLayout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="@dimen/_40dp"
+                android:background="@color/btncolor"
+                android:fontFamily="@font/dinarabic"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/_15dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

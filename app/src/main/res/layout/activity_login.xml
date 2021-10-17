@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/toolbar1"
+                layout="@layout/toolbar5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/toolbar1"
+                android:background="@drawable/toolbar_dropshadow" />
+
+            <ImageView
+                android:layout_below="@+id/toolbar1"
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_115dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginRight="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_40dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo_examica" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/MobileLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/logo"
+                android:layout_marginStart="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_40dp"
+                android:layout_marginEnd="@dimen/_40dp"
+                android:hint="@string/mobileno">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobiletv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:padding="@dimen/_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/MobileLayout"
+                android:layout_marginStart="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_40dp"
+                android:hint="@string/password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/password_layout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="@dimen/_40dp"
+                android:background="@color/black"
+                android:fontFamily="@font/dinarabic"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/_15dp" />
+
+            <LinearLayout
+                android:id="@+id/reset_Layout"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/login"
+                android:layout_marginStart="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="42dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:id="@+id/forgetLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reset"
+                        android:textColor="@color/btncolor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/orll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reset_Layout"
+                android:layout_marginStart="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_50dp"
+                android:layout_marginEnd="@dimen/_40dp"
+                android:background="@color/white1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:text="-----------" />
+
+                <TextView
+                    android:id="@+id/or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white1"
+                    android:text="@string/nothaveanac"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:text="--------" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/orll"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="@dimen/_40dp"
+                android:background="@drawable/spinner"
+                android:fontFamily="@font/dinarabic"
+                android:text="@string/signup"
+                android:layout_marginBottom="@dimen/_40dp"
+                android:textAllCaps="false"
+                android:textColor="@color/btncolor"
+                android:textSize="@dimen/_15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
